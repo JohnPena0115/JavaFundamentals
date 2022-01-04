@@ -1,0 +1,76 @@
+Method => a block of code that performs a task
+    *To declare a method you only need
+        => a return type (void, int, String)
+            +primitive return types are lowercase
+            +reference return types are uppercase
+
+        => a name ... also referred to as an identifier
+
+        => parentheses ()
+            +if the method does not take any arguments
+            +the parentheses can be empty
+            +otherwise, the parameters for the method will go inside the parentheses
+            +in addition, you have to specify the type for each parameter
+
+        => a pair of curly braces
+            +they delineate the methods' body
+            +the body will house the code the
+            +method will execute along with any
+            +local variable declarations
+
+Though these are the only required elements to declare a method,
+most methods in Java also have an explicit access modifier field.
+Method access modifiers dictate whether a method can be accessed
+from within or outside of a class or from within or outside of
+a package. The four types of access modifiers, both implicit and
+explicit are
+
+        => default (implicit access modifier)
+            +you do not write out this access modifier. This is just
+            +the default modifier when an access modifier of protected,
+            +public, or private is not specified
+
+            +can only be accessed within the package it is declared in
+            +2nd most flexible access modifier
+
+        => public (explicit)
+            +can be accessed outside of the package it is declared in
+            +can be accessed outside of the class it is declared in
+            +most flexible access modifier
+
+        => private (explicit)
+            +can only be accessed from within the class it is declared in
+            +most stringent access modifier
+
+        => protected (explicit)
+            +can be accessed within the package it is declared in
+            +can be accessed outside of the package it is declared in
+            +through way of a child class
+            +2nd most stringent access modifier
+
+
+General syntax for declaring a method =>
+
+    Return-type name(parameters (if needed) ) {
+
+        //Code your function will execute
+    };
+
+Every Java program is required to have at least one
+method => public static void main (String[] args)
+    * Every time a Java program is executed, the program's
+    main() method gets called and the code inside the
+    main methods' body gets executed
+
+Classes in Java use the pascal naming convention in which
+every word in the class identifier is capitalized
+
+    =>HereIsOneExample
+
+Methods and variables use the camel case naming convention.
+Here, the first word in the method or variable identifier is
+lowercase, and every word after the first, if there are any,
+is uppercase
+
+    =>hereIsAnotherExample
+
