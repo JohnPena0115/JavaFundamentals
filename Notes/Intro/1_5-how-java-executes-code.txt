@@ -1,0 +1,38 @@
+In order for Java to execute our program, the Java compiler takes in our
+source document/code, checks it for syntax errors, and if none are encountered,
+outputs Java bytecode in a document with a .class file extension.
+
+IntelliJ invokes the Java compiler for us so we don't see this step. If we
+did not have an IDE, we would have to invoke the Java compiler ourselves by
+typing "javac Main.java" in a command prompt that was in the same folder as
+our "Main.java" file. If all went well, a "Main.class" document should have
+been produced. You would be able to verify this by typing "ls" into your
+command prompt immediately after the successful execution of "javac Main.java".
+Once the "Main.class" file has been created, then you would be able to type
+"java Main" to actually run your program.
+
+So to run a Java program without an IDE =>
+    +create Java source document
+    +write valid, syntax-error free Java source code
+    +save Java source document
+    +open command prompt
+    +go to Java source document directory
+    +type "javac x.java" where x is the name of your file
+    +confirm a "x.class" file was created
+    +type "java x" to run your program
+
+Main.class => the bytecode version of Main.java
+
+Java bytecode is platform independent ... so if you have a Main.class
+file that file should be able to run on Linux, Windows or Macs if a
+JRE(Java Runtime Environment) is also installed
+
+Every JRE has a JVM(Java Virtual Machine) ... the JVM takes our Java
+byte code and translates it into the native code for the underlying
+os ... so if you are on a Windows machine, the JVM converts our Java
+bytecode into the native code that windows can understand ... this architecture
+is the reason why Java applications are portable, i.e, platform independent.
+
+C# and Python also have this same architecture
+
+
