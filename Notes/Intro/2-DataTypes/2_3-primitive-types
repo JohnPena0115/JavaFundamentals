@@ -1,0 +1,139 @@
+Java groups data into two categories
+    => Primitive types
+        +they store simple values
+  and
+    => Reference types
+        +they store complex objects
+
+
+This section is primarily concerned with Primitive types.
+
+Java has 8 primitive types:
+    +byte
+    +short
+    +int
+    +long
+    +float
+    +double
+    +char
+    +boolean
+
+
+Byte
+----
+A byte takes up 1 byte of memory. Within a
+byte variable, you can store integer values
+from -128 to 127
+
+
+Short
+-----
+A short takes up 2 bytes of memory. Within
+a short variable you could store a minimum
+integer value of -32,768 and a maximum integer
+value of 32,767
+
+
+Int
+---
+An int takes up 4 bytes of memory. Within a int
+variable you could store any whole number from
+-2,147,483,648 to 2,147,483,647
+
+
+Long
+---
+A long takes up 8 bytes of memory and can store whole
+value from -2^63  to  2^63 - 1
+
+Float
+-----
+Float is one of the two Java data types that can represent
+a decimal point number. A float takes up 4 bytes of memory.
+Float variables can store values from roughly 1.4^-45
+to 3.4^38
+
+
+Double
+------
+Double's are the second data type that are used to represent
+decimal numbers. A double takes up 8 bytes of memory. The
+maximum value of a double is available as the constant
+"Double.MAX_VALUE" and the minimum value of a double is
+available as the constant "-Double.MAX_VALUE"
+
+
+Floats and doubles are advised against in calculations where
+precision is needed. Calculations involving currency would be
+one scenario. In those cases, the java.math.BigDecimal class
+is recommended.
+
+
+Char
+----
+Char variable's store single characters. A char takes up 2
+bytes of data, in part so it can support characters in foreign
+languages.
+
+Reminder: '' => for declaring char literals
+          "" => for declaring string literals
+
+
+
+Boolean
+-------
+Boolean variables store the values of "true" or "false". Boolean
+variables take up 1 byte of data.
+
+
+Readability of Large Numbers
+----------------------------
+
+Java allows us to use underscores to aid in the readability
+of large numbers. So, if you want to declare an int that stores
+the value of 10 million you would write
+
+int currentSubscribers = 10_000_000;
+
+as oppose to
+
+int currentSubscribers = 10000000;
+
+
+Declaring Long Data Type Variables
+----------------------------------
+
+If you write the following Java will throw an error
+
+long currentViews = 4_000_000_000;
+
+An error is thrown because, by default, Java reads any whole
+number as an integer. When Java reads "4_000_000_000" it reads
+it as an int and correctly deduces that 4_000_000_000 > Integer.MAX_VALUE.
+In order to help Java break out of this loop you would need to write
+the following:
+
+long currentViews = 4_000_000_000L;
+
+In Java, any whole number being assigned to a type long variable will
+need to have a suffix of "L". Though the suffix could be lower or upper
+case, uppercase is advised as a lowercase "l" could easily be misread as
+a 1 by a human reader.
+
+Declaring Float Data Type Variables
+-----------------------------------
+
+Just like Java evaluates any whole number, by default, as an
+int, by default, Java evaluates any decimal point number
+as a double. If you want to declare a float without Java
+throwing an error you will need to override this default
+behavior. If you end a decimal point number with "F", you are
+letting Java know, hey, don't evaluate this as a double, evaluate this
+as a float.
+
+float price = 10.99; will throw an error
+
+float price = 10.99F; will make sure Java doesn't rock the boat.
+
+
+
