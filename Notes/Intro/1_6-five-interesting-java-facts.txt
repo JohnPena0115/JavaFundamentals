@@ -1,0 +1,33 @@
+5 interesting facts about Java
+
+1 => Java was developed by James Gosling in 1995 at Sun
+     Microsystems.
+
+2 => Java was originally declared with a value of "Oak".
+     It was later reassigned the value of "Green" before
+     finally being reassigned the value by which we
+     know it today ... "Java"
+
+3 => There are four editions of Java
+        +The Standard Edition
+            => the core Java platform
+        +The Enterprise Edition
+            => used for building large scale and distributed systems
+            => provides additional libraries for building fault-tolerant,
+               distributed, multitude software
+        +The Micro Edition
+            => a subset of the standard edition
+            => this is designed for mobile devices
+            => it's libraries our specific for mobile devices
+        +The Java Card Edition
+            => allows Java based applications to be run securely
+               on smart cards
+            => Java Card is widely used on ATM machines
+
+4 => Java is fully implemented within all Blu-ray players and once was
+     Google's language of choice for Android applications. Java was
+     replaced by the Android software development kit and Kotlin in
+     that regard.
+
+5 => According to indeed.com, as of May 2019, the average salary for a
+     Java developer is $101,929.
