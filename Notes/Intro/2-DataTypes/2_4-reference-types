@@ -1,0 +1,42 @@
+So as a refresher, we use primitive types to store simple
+values like numbers, single characters or booleans.
+
+In contrast, we use reference types to store complex objects.
+In Java, anything that is not a primitive type is a reference type.
+A string is considered a reference type.
+
+When declaring some reference types, we will need to use the "new" operate to
+dynamically allocate memory for the reference variable in the heap.
+You do not necessarily have to follow this convention with some
+reference types, strings being one example. According to
+geeksforgeeks (https://www.geeksforgeeks.org/strings-in-java/),
+String variables that are initialized without the new String("x") command
+are added to the string constant pool, which has its own dedicated space
+in the heap.
+
+When we declare primitive types we do not have to allocate memory. Memory is
+automatically allocated and released by the Java runtime environment. Putting
+aside String reference types, when we declared reference type variables we should always
+allocate memory by using the "new" operator, followed by the name of the class
+the reference type belongs to, followed by a pair of parentheses. Incidentally, this
+is how you also create a new instance(object) of a class.
+
+Accessing the Members of a Class
+--------------------------------
+
+When can access the members of a class that are meant to be accessible
+by using the dot operator. A class can prohibit access to particular
+members by setting the appropriate modifier for that member.
+
+The members of a class can either be instance variables or
+methods.
+
+Primitive types do not have members.
+
+
+Tangents
+-------
+
+In order to use a class that is in a different package than the one
+we are currently in, we'll need to import it.
+
