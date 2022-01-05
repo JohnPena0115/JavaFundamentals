@@ -1,0 +1,34 @@
+In Java, we use variables to temporarily store data in
+the computer's memory.
+
+Variables have 3 components: a type, an identifier and a
+value.
+
+So when we write "int age = 30;" we are storing the number 30
+somewhere in the computer's memory and we're assigning the label
+"age" to that memory location
+
+
+Best Practices for Declaring Variables
+-------------------------------------
+
+Though possible he advises against declaring multiple variables
+on the same line
+
+not advised => int age = 30, temperature = 20;
+
+recommended => int age = 30;
+               int temperature = 20;
+
+
+Naming Convention for Variables
+------------------------------
+
+It is best practices to use camelCase notation when
+writing out a variable identifier
+
+In contrast, in Java, class identifiers are written out
+with PascalCase notation
+
+
+
