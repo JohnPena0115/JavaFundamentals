@@ -1,0 +1,63 @@
+Arrays are used to store lists of items
+    +list of numbers
+    +list of people
+    +list of messages
+
+Arrays are reference types so the following is one
+way of declaring an array:
+
+    typeofArray[] identifier = new typeofArray[A];
+
+We would set the size of the array were A is ...
+
+For a more explicit example, we could declare a integer
+array with an identifier of "numbers" and initialize it to
+a size of 5 like so:
+
+    int[] numbers = new int[5];
+
+However, like strings, arrays do not necessarily have
+to be declared with the new operator. You could declare
+an array with an array literal like so:
+
+    int[] numbers = {2,3,5,7,11}
+
+
+One thing to keep in mind, with Java, arrays have a fixed sized. So, once
+we create them we cannot add or remove items.
+
+
+Displaying the Contents of an Array
+-----------------------------------
+
+Let's see we have the following lines:
+
+    int[] numbers = new int[5];
+    numbers[0] = 1;
+    numbers[1] = 2;
+    System.out.println(numbers);
+
+You are not going to get
+
+    [1, 2, 0, 0, 0]
+
+You are going to get the forwarding address (which is stored in the stack)
+for the array object, which is stored in the heap. Remember, an array is a
+reference type and a reference type only stores the reference, which you can
+think of as a heap memory address, for the object
+
+If you wanted to actually see the contents of numbers you would have to
+write the following lines:
+
+    int[] numbers = new int[5];
+    numbers[0]= 1;
+    numbers[1] = 2;
+    System.out.println(Arrays.toString(numbers));
+
+Any array in Java will be an instance(object) of the Array class. As such,
+any array in Java has access to the Array class methods. One of those methods,
+toString(), returns a string representation of the contents of an array.
+
+Side Topics
+-----------
+Exceptions => exceptions are Java's way of reporting errors
