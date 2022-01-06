@@ -1,0 +1,30 @@
+The String class is defined in the base java.lang package
+
+Because String is a class, it has members that we can access
+using the dot operator(on a object of the String Class). The
+methods down below are some of those members:
+    +endsWith(String suffix)
+    +indexOf(int ch)
+    +length()
+    +replace(char oldChar, char newChar)
+
+
+In Java strings are immutable. Because of this, any method
+called on a string object will not modified that string but
+instead return a new string.
+
+String message = "Hello World!!";
+
+System.out.println(message.replace("!", "*"); //=> Hello World**
+System.out.println(message); //=> Hello World!!
+
+Other useful methods/members of the String class
+are
+  +toLowerCase()
+  +toUpperCase()
+  +trim()
+  +charAt()
+
+
+
+
