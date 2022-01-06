@@ -1,0 +1,104 @@
+Arithmetic Expressions Worth Addressing
+--------------------------------------
+
+/ => division operator. Operates slightly different
+     than the math version we are use to
+
+        + 8/3 in math will return ~2.6667
+        + 8/3 in Java will return 2
+        + if you want the division operator to return a
+          decimal one of the operands in the division
+          expression will either have to be declared
+          a float or double or you will have to cast
+          one of the int operands into a float or
+          double
+        + in addition, if you want to store the result
+          of an expression involving a division operator
+          and you would like the result to return a decimal
+          number, the variable where the decimal result is
+          being stored in would have to be declared either
+          a float or a double.
+
+% => the modulus operator. Returns the remainder of a division
+     expression involving any combination of whole or decimal
+     numbers.
+
+     For example,
+
+        System.out.println(6.7 % 2.7);
+
+     returns => roughly 1.3 => 1.2999999999999998 to be exact
+
+     whereas
+
+        System.out.println( 20 % 7 );
+
+     returns => 6
+
+
+    Fun fact => a modulus expression where the numerator(left operand) is
+                smaller than the denominator(right operand) will always
+                return the numerator/right operand if both operands are
+                positive numbers. For example,
+
+                  System.out.println( 7 % 20 );
+
+                returns => 7
+
+
+++ => increment operator. Increments the value of a variable that
+      is an object of the Numbers class by 1. By itself, the increment
+      operator is harmless but you have to be careful when you employ
+      it on the right side of an assignment expression as the increment
+      operator can be employed as either a suffix or prefix.
+
+            int x = 1;
+            int y = x++;
+            System.out.println(y);
+
+      will return an potentially unintended result => 1. This happens because
+      Java first copies the current value of x (1) to y and then it increments
+      x. However, if you had written
+
+            int x = 1;
+            int y = ++x;
+            System.out.println(y);
+
+      then Java would have incremented the value of x by 1 before assigning
+      the value of x to y. So, in this scenario, when you go to print y the
+      value of y will display 2. The same scenario happens when you execute
+
+            //Scenario 1
+            int x = 1;
+            System.out.println(x++);
+
+      vs
+            //Scenario 2
+            int x = 1;
+            System.out.println(++x);
+
+      In the first scenario, Java first prints the current of value of x(1)
+      to the terminal and then it increments the value of x by 1.
+
+      In the second scenario, Java first increments the value of x by 1 and
+      then prints the current value of x(2) to the terminal
+
+      If you were to run
+
+            int x = 1;
+            System.out.println(x++);
+            System.out.println(++x);
+
+      the terminal would display the values of 1 and 3, each on their own
+      respective line.
+
+
+
+
+
+
+
+
+
+
+

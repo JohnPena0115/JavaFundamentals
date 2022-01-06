@@ -3,6 +3,11 @@ package com.careerdevs;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Printing out takes too long.");
+
+        int x = 1;
+
+        System.out.println(x++ + ++x);
+        //System.out.println(++x);
+
     }
 }
