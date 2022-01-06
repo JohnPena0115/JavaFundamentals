@@ -1,0 +1,9 @@
+In Java, ", ', and \ are special characters. If you want to include
+those characters in a string literal you'll need to escape them with
+a backslash ...
+    \' => escape sequence for single quote
+    \" => escape sequence for a double quote
+    \\ => escape sequence for a backslash
+
+\n => allows us to a new line to our string
+\t => allows us to insert a tab
