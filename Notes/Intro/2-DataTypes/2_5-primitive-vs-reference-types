@@ -1,0 +1,47 @@
+Beyond the storage of simple values vs complex objects, memory
+management holds the key to another important distinction between
+primitive types and reference types.
+
+Primitive values do not share state with other primitive values.
+What this means is that each primitive value is allocated its
+own memory space and those memory spaces do not interact. So if we have
+
+int x = 5;
+int y = x;
+
+
+somewhere in the Java stack there are two distinct memory locations
+that each store the int value 5. So if somewhere down the line we
+were to reassign x a value of 10, we would only interact with the
+5 stored in the memory location for x, not the 5 stored in the memory
+location for y. So
+
+int x = 5;
+int y = x;
+x = 10;
+
+System.out.println(x) would result in => 10
+
+and
+
+System.out.println(y) would result in => 5
+
+Work in Progress
+----------------
+If you set the value of reference variable A to reference variable B,
+the reference variables A and B will be interconnected and hence share
+state. This is because reference variables do not store the actual object
+that they are assigned but a "forwarding address" to the objects they are
+assigned. The forwarding address is stored on the stack. The actual object
+is stored on the heap. So when you create reference variable A it will be
+allocated its own memory locations on the stack. The same holds true for
+when you create reference variable B and set it equal to A. The difference
+is that both of those distinct memory locations on the stack hold the
+forwarding address for the same object on the heap. For reference variables,
+the stack is like a pit stop, but what really matters is the end
+destination(the object stored on the heap). Once you have declared and
+initialized a reference variable, both it's memory location on the stack
+and the forwarding address that that memory location stores will never
+change. What can change is the state of the object on the heap.
+
+
