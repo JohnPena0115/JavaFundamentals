@@ -9,7 +9,7 @@ A constant variable has all the components of a "regular" variable: a type, an
 identifier, and an initial value. However, a constant variable also
 has a  Java keyword prefix that let's Java know to treat it as a constant.
 That prefix is the word "final". Additionally, by convention, the identifier
-for a constant variable should be all uppercase. So if you wanted to write
-a program involving the speed of light, you could write the following:
+for a constant variable should be all uppercase. So if you want to write
+a program involving the speed of light, you would write:
 
     final int LIGHTSPEED = 186_282;

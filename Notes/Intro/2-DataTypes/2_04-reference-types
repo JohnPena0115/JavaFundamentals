@@ -16,7 +16,7 @@ in the heap.
 
 When we declare primitive types we do not have to allocate memory. Memory is
 automatically allocated and released by the Java runtime environment. Putting
-aside String reference types, when we declared reference type variables we should always
+aside String reference types, when we declared reference type variables we should
 allocate memory by using the "new" operator, followed by the name of the class
 the reference type belongs to, followed by a pair of parentheses. Incidentally, this
 is how you also create a new instance(object) of a class.
@@ -26,7 +26,7 @@ Accessing the Members of a Class
 
 When can access the members of a class that are meant to be accessible
 by using the dot operator. A class can prohibit access to particular
-members by setting the appropriate modifier for that member.
+members by setting the appropriate access modifier for that member.
 
 The members of a class can either be instance variables or
 methods.

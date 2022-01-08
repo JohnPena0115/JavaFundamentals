@@ -21,8 +21,8 @@ is done by Java. Explicit casting is done by the programmer. Explicit casting
 can only happen between compatible types.
 
 If you want to cast data types that are incompatible, for example,
-casting a string value into an int value, you will have to use
-wrapper class methods such as Integer.parseInt() , String.parseString()
+casting a string value into an int value, you will have to use a
+wrapper class method such as Integer.parseInt() , String.parseString()
 or String.valueOf() ...
 
 Being exposed to converting a string to a number is important because

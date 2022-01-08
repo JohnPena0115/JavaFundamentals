@@ -9,15 +9,14 @@ Arithmetic Expressions Worth Addressing
         + if you want the division operator to return a
           decimal one of the operands in the division
           expression will either have to be declared
-          a float or double or you will have to cast
-          one of the int operands into a float or
-          double
+          a float(or double) or you will have to cast
+          one of the int operands into a float (or
+          double).
         + in addition, if you want to store the result
           of an expression involving a division operator
           and you would like the result to return a decimal
-          number, the variable where the decimal result is
-          being stored in would have to be declared either
-          a float or a double.
+          number, the variable where the decimal result will be
+          stored would have to be declared either a float or a double.
 
 % => the modulus operator. Returns the remainder of a division
      expression involving any combination of whole or decimal
@@ -38,7 +37,7 @@ Arithmetic Expressions Worth Addressing
 
     Fun fact => a modulus expression where the numerator(left operand) is
                 smaller than the denominator(right operand) will always
-                return the numerator/right operand if both operands are
+                return the numerator/left operand if both operands are
                 positive numbers. For example,
 
                   System.out.println( 7 % 20 );
@@ -52,11 +51,17 @@ Arithmetic Expressions Worth Addressing
       it on the right side of an assignment expression as the increment
       operator can be employed as either a suffix or prefix.
 
+      The increment operator as a prefix => ++x;
+      The increment operator as a suffix => x++;
+
+      When part of a complex expression Java treats the suffix and prefix
+      increment operators differently.
+
             int x = 1;
             int y = x++;
             System.out.println(y);
 
-      will return an potentially unintended result => 1. This happens because
+      will return a potentially unwanted result => 1. This happens because
       Java first copies the current value of x (1) to y and then it increments
       x. However, if you had written
 

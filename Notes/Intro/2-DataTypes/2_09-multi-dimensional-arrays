@@ -1,17 +1,17 @@
-The most basic type of array in Java is a one dimensional array
+The most basic type of array in Java is a one dimensional array.
 
 A multi-dimensional array is an extension of that concept. A
 multi-dimensional array is sometimes referred to as an array
-of an array ...
+of arrays ...
 
 Whereas a one dimensional array could be seen as storage for a
-list of primitive values or objects, a multi-dimensional array
-could be seen as storage for a list of lists
+list, a multi-dimensional array could be seen as storage for
+a list of lists.
 
 Another way to view the difference between the two is to think of
 a one dimensional array as consisting of one row with many columns
 and to think of a multi-dimensional array as consisting of many rows
-with many columns
+with many columns.
 
 Declaring and Initializing a 2D Array
 -------------------------------------
@@ -22,9 +22,8 @@ Below is one way of declaring a 2D integer array ...
     int[][] numbers = new int[x][y];
 
 You would need to replace "x" with the desired number of rows
-you would want to the 2D array to have and you would replace "y"
-with the desired number of columns you would want the 2D array
-to have ...
+you would want the 2D array to have and "y" with the desired
+number of columns
 
 You could also declare and initialize a 2D array by providing
 array literals ...
@@ -44,13 +43,13 @@ column the element occupied in the array.
 Keep in mind that the rows and columns of an array are 0-based indexed
 so the first row and column of numbers would be
 
-    numbers[0] [0]
+    numbers[0][0]
 
 Displaying the Contents of a 2D Array
 -------------------------------------
 
 Remember, if we wanted to display the contents of a
-ond dimensional array writing out
+ond dimensional array, writing out
 
     System.out.printlin(chars)
 

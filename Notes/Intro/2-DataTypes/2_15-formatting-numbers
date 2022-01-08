@@ -5,48 +5,51 @@ a percentage value (10%) ...
 
 The NumberFormat class in Java comes in handy
 for these situations. The NumberFormat class
-is defined in the java.text package so will
+is defined in the java.text package so we will
 need to import it before we can use it.
 
 The NumberFormat class is an abstract class
 and therefore we can not use the "new" operator
-to create an instance of them.
+to create an instance of that class.
 
-Throws an exception => NumberFormat currency = new NumberFormat()
+    Throws an exception =>
+
+            NumberFormat currency = new NumberFormat()
 
 However, we can use a get factory method on abstract classes to
-create new instances of them. A get factory method is a method
+create new instances of those classes. A get factory method is a method
 that creates an instance of an abstract class and returns it.
 For NumberFormat, getCurrencyInstance() would be considered a
 factory method. So instead of writing
 
-NumberFormat currency = new NumberFormat();
+    NumberFormat currency = new NumberFormat();
 
-    we would write
+        we would write
 
-NumberFormat currency = NumberFormat.getCurrencyInstance();
+    NumberFormat currency = NumberFormat.getCurrencyInstance();
 
 Once an object of the NumberFormat class is created, it will
-have access to the .format() method. The format method will
-return a string representation of its argument formatted as a
-currency. So if you wrote
+have access to the format() method. The format method, called on a
+currency object will return a string representation of its argument
+formatted as a currency. So if you wrote
 
-String currency = currency.format(235791113.97)
+    NumberFormat currency = NumberFormat.getCurrencyInstance();
+    String currency = currency.format(235791113.97)
 
 you would get an output of
 
-$235,791,113.97
+    $235,791,113.97
 
 
 Formatting a Number as a Percent
 --------------------------------
 
 To format a number as a percentage, you would first create
-a getPercentInstance object of the NumberFormat class.
+a percent object of the NumberFormat class:
 
     NumberFormat percent = NumberFormat.getPercentInstance();
 
-We would then be able to call the .format() method on this
+We would then be able to call the format() method on this
 object to convert an argument of 0.1 to 10% for instance.
 
     String result = percent.format(0.1);

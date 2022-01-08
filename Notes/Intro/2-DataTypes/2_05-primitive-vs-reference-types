@@ -34,10 +34,10 @@ state. This is because reference variables do not store the actual object
 that they are assigned but a "forwarding address" to the objects they are
 assigned. The forwarding address is stored on the stack. The actual object
 is stored on the heap. So when you create reference variable A it will be
-allocated its own memory locations on the stack. The same holds true for
+allocated its own memory location on the stack. The same holds true for
 when you create reference variable B and set it equal to A. The difference
 is that both of those distinct memory locations on the stack hold the
-forwarding address for the same object on the heap. For reference variables,
+same forwarding address for the object on the heap. For reference variables,
 the stack is like a pit stop, but what really matters is the end
 destination(the object stored on the heap). Once you have declared and
 initialized a reference variable, both it's memory location on the stack

@@ -8,15 +8,16 @@ methods down below are some of those members:
     +length()
     +replace(char oldChar, char newChar)
 
-
 In Java strings are immutable. Because of this, any method
 called on a string object will not modified that string but
-instead return a new string.
+instead return a new string. The code down below demonstrates
+that even after you call replace on message (a string object),
+message remains unmodified.
 
-String message = "Hello World!!";
+    String message = "Hello World!!";
 
-System.out.println(message.replace("!", "*"); //=> Hello World**
-System.out.println(message); //=> Hello World!!
+    System.out.println(message.replace("!", "*"); //=> Hello World**
+    System.out.println(message); //=> Hello World!!
 
 Other useful methods/members of the String class
 are

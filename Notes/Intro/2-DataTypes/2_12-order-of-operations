@@ -24,8 +24,8 @@ When Combined with Other Mathematical Operators
 By themselves, the prefix increment operator (++x) and the postfix
 increment operator (x++) evaluate to the same thing => x = x + 1.
 However, if they are on the right hand side of an assignment statement,
-or if they are used in a mathematical expression, the prefix and
-postfix increment operators do get evaluated differently.
+or if they are used in a mathematical expression involving other elements,
+the prefix and postfix increment operators do get evaluated differently.
 
 Let's say you encountered the following lines of code ...
 
@@ -38,7 +38,7 @@ Let's say you encountered the following lines of code ...
 
 When Java begins evaluating Line 2, the first thing it will do is evaluate x++. Since
 x++ has a postfix operator, Java will evaluate X at its current value, which at that
-point is 2 and then increment the value of X by 1. Before it evaluates the prefix ++x
+point is 2 and then increment the value of X by 1. Before it evaluates ++x
 we would have
 
     int y = 2 * ++x (where x now equals 3)
