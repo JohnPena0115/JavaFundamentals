@@ -1,7 +1,9 @@
 5 interesting facts about Java
 
 1 => Java was developed by James Gosling in 1995 at Sun
-     Microsystems.
+     Microsystems. Sun Microsystems was later bought out
+     by Oracle which is why you see the Java source
+     documentation on Oracle's website.
 
 2 => Java was originally declared with a value of "Oak".
      It was later reassigned the value of "Green" before
@@ -18,11 +20,11 @@
         +The Micro Edition
             => a subset of the standard edition
             => this is designed for mobile devices
-            => it's libraries our specific for mobile devices
+            => it's libraries are tailored for mobile devices
         +The Java Card Edition
             => allows Java based applications to be run securely
                on smart cards
-            => Java Card is widely used on ATM machines
+            => Java Card is widely used on ATMs
 
 4 => Java is fully implemented within all Blu-ray players and once was
      Google's language of choice for Android applications. Java was

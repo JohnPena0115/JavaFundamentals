@@ -1,6 +1,6 @@
 Objective => how to write and execute your first Java
 program.
-    +On IntelliJ's homescreen, select "+Create New Project".
+    +On IntelliJ's home-screen, select "+Create New Project".
     +On the far left side of screen make sure Java is highlighted.
     +In the middle of screen, next to "Project SDK:",select the
     +version of Java you would like to use for your project.
@@ -31,7 +31,7 @@ To the left of your Main.java file there should be a Project panel.
 In this panel, you'll be able to see all the folders and files in your
 project. If you expand your project folder, you should see your
 source folder (src). Your base package(itself a folder) should be located
-within your "src" folder. Inside of your base package folder is where
+within your "src" folder. Inside your base package folder is where
 your Main.java file should be located. By convention, all Java files
 have to have a .java file extension. The first line of code you see in
 your Main.java file should be the package statement. Right below the
@@ -43,21 +43,23 @@ Newbie lesson => the main method in your program, which is a member
 of the Main class, should always be declared as static.
 
 Below the Main class should be a call to the main method. We will
-write our program inside of the main method's body.
+write our program inside the main method's body.
 
 Let's print something to the console.
 
-The first step to do that is to pay a visit to the System class.
+The first step to take is to pay a visit to the System class.
 
 System => a class in Java that is defined in the java.lang package.
 The System class has various members, one of which is the field
-labelled "out". "Out" in system.out is a PrintStream field. PrintStream
-is itself a Java defined class. Hence, we can use the dot
+labelled "out". "Out" in "system.out" is a PrintStream field. PrintStream
+itself is a Java defined class. Hence, we can use the dot
 operator on "out" to see the methods defined in the PrintStream class. "println"
-is one of the methods defined in the PrintStream class. Chained together,
-System.out.println allows us to display text to the console. So if you
-pass "Dear Slim, I wrote you but you still ain\'t callin\'" to
-System.out.println(), inside of the main method of the Main class, you would
+is one of those methods. Chained together, System.out.println allows us to display
+text to the console. So if you pass
+
+"Dear Slim, I wrote you but you still ain\'t callin\'"
+
+to System.out.println(), inside the main method of the Main class, you would
 have written your first program.
 
 package com.helloworldrequiem;
@@ -66,11 +68,16 @@ public class Main {
 
     public static void main (String[] args) {
 
-        System.out.printlin("Dear Slim, I wrote you but you still ain\'t callin\'")
+        System.out.println("Dear Slim, I wrote you but you still ain\'t callin\'")
 
     }
 
 }
+
+To Self
+-------
+
+When you review see how you feel about lines 54-55.
 
 
 
