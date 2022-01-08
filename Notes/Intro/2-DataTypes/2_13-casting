@@ -1,0 +1,30 @@
+Implicit casting => when you assign the value of a smaller data
+                    type to a larger data type. Below x, which
+                    was initially declared a short, is implicitly
+                    casted to an integer.
+
+                        short x = 1;
+                        int y = x + 2;
+                        System.out.println(y);
+
+
+If need be, Java can, at the very minimum, automatically (implicitly) convert a
+byte to a short, a short to an int, an int to a long, a long to a float
+and a float to a double.
+
+As a general rule of thumb, implicit casting happens when converting a
+value from one data type to another will not result in data lost.
+
+In contrast with implicit casting, explicit casting happens when we want
+to assign a value of a larger data type to a smaller data type. Implicit casting
+is done by Java. Explicit casting is done by the programmer. Explicit casting
+can only happen between compatible types.
+
+If you want to cast data types that are incompatible, for example,
+casting a string value into an int value, you will have to use
+wrapper class methods such as Integer.parseInt() , String.parseString()
+or String.valueOf() ...
+
+Being exposed to converting a string to a number is important because
+most frameworks for building user interfaces receive input from the user
+as a string
