@@ -1,0 +1,37 @@
+Math class => part of the java.lang package
+that is automatically imported
+
+Useful Methods in the Math Class
+--------------------------------
+
+Math.round() => rounds a decimal number to the whole number
+                that is closest to the argument provided.
+                There are two implementations of Math.round().
+                The first implementation takes a float argument
+                and returns an int. The second implementation
+                takes a double argument and returns a long.
+
+Math.ceil() => takes a decimal number, either a float or double,
+               and returns the smallest whole number that is greater
+               than the input in the form of a double. So
+               Math.ceil(16.0001F) would return 17.0
+
+
+Math.floor() => returns the mathematical integer (in the form of
+                a Java double) that is less than or equal to the
+                argument provided. So Math.floor(17.0) returns
+                17.0 and Math.floor(17.99999) also returns 17.0.
+
+
+Math.max() => returns the greater of the two argument values provided.
+              Math.max() has 4 implementations. In each implementation,
+              the two arguments provided have to be of the same type.
+                + max(int a, int b)
+                + max(long a, long b)
+                + max(float a, float b)
+                + max(double a, double b)
+
+Math.random() => generates and returns a random double between 0 and 1
+                 exclusive. This means that Math.random() could generate
+                 0.0 but it will never generate 1.0. It can however generate
+                 a double similar to 0.99999.
