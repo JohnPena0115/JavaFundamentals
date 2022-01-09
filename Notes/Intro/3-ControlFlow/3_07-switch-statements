@@ -1,0 +1,63 @@
+Switch Statements
+-----------------
+
+We use switch statements to execute different parts of
+code depending on a value of an expression.
+
+The general form of a switch statement is
+
+    switch(expression) {
+
+        case x:
+          // x code block
+          break;
+
+        case y:
+          // y code block
+          break;
+
+        case z:
+          //z code block
+          break;
+
+        default:
+          //default code block
+    }
+
+A switch statement's expression is evaluated once and the result
+of that evaluation is compared to the values of the respective
+cases. If there is a match between the value of the expression
+and the value of a case, the associated block of code for that
+case is executed.
+
+Though the break statement is not necessary its exclusion could lead
+to unintended consequences. Let's take the code from up above but
+only a a break statement to case x ...
+
+switch(expression) {
+
+        case x:
+          // x code block
+          break;
+
+        case y:
+          // y code block
+
+
+        case z:
+          //z code block
+
+
+        default:
+          //default code block
+    }
+
+
+If the value of the expression ever matched "y", the switch statement
+would execute the y code block but also the z and default code block.
+
+Likewise, if the expression value ever matched "z", the z code block
+would be executed but so would the default code block.
+
+The exclusion of a break statement can work to your benefit but, unless
+you have a good reason, it's probably best to include it.
