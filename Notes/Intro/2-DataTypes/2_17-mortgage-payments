@@ -1,0 +1,30 @@
+Mosh wants us to write a program where we ask the user for
+    +their principal => their loan amount
+    +the annual interest rate on their loan
+    +the duration of their loan
+
+After receiving all this information we would calculate
+the user's monthly mortgage payment and display it to
+them as a string currency object.
+
+The example template he provided was:
+
+    Principal:
+    Annual Interest Rate:
+    Period(Years):
+
+    Mortgage:
+
+Equation for Calculating Mortgage Payments
+-----------------------------------------
+
+M = mortgage monthly payment
+P = principal of loan
+R = monthly interest rate
+      +Take your annual interest rate and divide it by 12
+N = number of total payments required
+      +Take the amount of years required to pay off loan
+      and multiple by 12
+
+
+      m = p * ( r(1+r)^n / (1+r)^n - 1)
