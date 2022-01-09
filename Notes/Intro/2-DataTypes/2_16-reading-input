@@ -1,0 +1,112 @@
+In Java, to read input from a user we need to
+import the Scanner class. The Scanner class is
+defined in the java.util package so we will need
+to import it.
+
+If we want to read input from a user from the
+terminal window we would first need to create
+a new Scanner object:
+
+    Scanner scanner = new Scanner(System.in);
+
+Next, if we want to display a prompt of "Pick a Number"
+to the user we would write:
+
+    System.out.println("Pick a number: ");
+
+Cool, so we ask the user to pick a number but if we want
+to do anything with that information we need a place to
+store that number. We could do that by typing:
+
+    int number = Integer.valueOf(scanner.nextLine());
+
+
+Now, we would be able to use
+
+      System.out.println()
+
+in combination with "number" to return a message back to the user
+based on the number he picked. Below is a simple message we could
+write:
+
+    System.out.println("You picked a number that was one less than " + number+1 + ".");
+
+Below is a slightly more involved program that does a good job of illustrating
+the basics of interacting with a user. It prompts the user to pick a series
+of positive integers and when the user decides to exit, the program calculates
+the average of the positive ints entered by the user.
+
+import java.util.Scanner;
+
+public class AverageOfPositiveNumbers {
+
+    public static void main(String[] args) {
+
+        //Creating an instance of the Scanner class
+        //to read and return user input
+        Scanner scanner = new Scanner(System.in);
+
+        //Keeps track of the number of positive integers a user
+        //has entered
+        int positiveTotal = 0;
+
+        //Keeps track of the sum of the positive integers a user
+        //has entered
+        int positiveSum = 0;
+
+        System.out.println("Pick a series of positive whole numbers."
+                           + '\n'
+                           + "We'll tell you the average."
+                           +'\n'
+                           + "Press Enter after each number."
+                           +'\n'
+                           + "Pick 0 to Exit:");
+
+        //Repeatedly asks user for number
+        while (true) {
+
+            //Reads and stores the number entered by user
+            int number = Integer.valueOf(scanner.nextLine());
+
+            //Terminates the while loop if user enters 0
+            if (number == 0){
+
+                //Only prints if user has not entered any positive numbers
+                //Only occurs if user enters 0 as his first number
+                if(positiveTotal == 0){
+
+                  System.out.println("Cannot calculate the average");
+
+
+                }
+
+                break;
+            }
+
+            //If user enters a positive int, the value of positiveTotal
+            //will be incremented by 1 and the value of positiveSum will
+            //be incremented by the number entered. Additionally, if the user picks a
+            //negative int they will be re-prompted to pick a positive one.
+            if (number > 0 ){
+
+                positiveTotal++;
+                positiveSum += number;
+
+            } else {
+
+                System.out.println("Please pick a positive whole number.");
+            }
+        }
+
+        //Summary output displaying the average of the positive ints
+        //entered by user if the user has entered at least one
+        //positive int
+        if (positiveTotal > 0) {
+
+            System.out.println("The average of the "
+                               + positiveTotal
+                               + " numbers you entered is: "
+                               + (double) positiveSum/positiveTotal);
+        }
+    }
+}
