@@ -1,0 +1,31 @@
+Comparison Operators
+--------------------
+
+We use comparison operators to compare primitive
+values.
+
+For example, if we wanted to compare if two integer
+variables store the same value we would use the
+equality(==) operator:
+
+    int x = 1;
+    int y = 1;
+    System.out.println(x == y);
+
+The "x==y" expression is referred to as a boolean expression.
+Boolean expression's can only produce values of "true" or "false".
+
+Other types of Comparison Operator's
+------------------------------------
+
+!= ... inequality operator
+
+> ... greater than operator
+
+>= ... greater than or equal to operator
+
+< ... less than operator
+
+<= ... less than or equal to operator
+
+
