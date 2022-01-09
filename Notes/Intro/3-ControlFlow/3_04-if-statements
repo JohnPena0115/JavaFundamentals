@@ -1,0 +1,26 @@
+If Statements
+-------------
+
+In any programming language if statements are extremely
+important because they allow us to make programs that
+make decisions based on certain conditions.
+
+If statements have the following general syntax:
+
+    if(boolean expression) {
+
+        //Code to Execute ;
+
+    }
+
+The curly braces help to delineate the if statement's
+body. If the body of the if statement only has one
+statement the curly braces are not technically required.
+
+The code inside the if statement's body is only executed
+if the boolean expression that precedes the body evaluates
+to true.
+
+
+
+
