@@ -1,0 +1,40 @@
+The Ternary Operator
+--------------------
+
+You could think of a ternary operator like a simplified If
+statement. The ternary operator consists of boolean expression
+and values that are returned depending on if the boolean
+evaluates to true or false.
+
+Below is the general form of a ternary operator:
+
+    (boolean expression) ? "Value if true" : "value if false"
+
+We can use ternary operators when we want to dynamically set
+the value of a variable dependent on some condition and we
+believe that doing so with an if statement would introduce
+unnecessary noise to the code ...
+
+
+So if we started here
+
+    int income = 120_000;
+    String className;
+    if (income > 100_000)
+        className = "First";
+    else
+        className = "Economy";
+
+
+We could migrate here
+
+    int income = 120_000;
+    String className = "Economy";
+    if (income > 100_000)
+        className = "First";
+
+
+And end up here
+
+    int income = 120_000;
+    String className = income > 100_000 ? "First" : "Economy";
