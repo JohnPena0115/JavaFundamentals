@@ -62,5 +62,7 @@ public class MortgageCalcMain {
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
         System.out.println("Mortgage: " + mortgageFormatted);
 
+        //Known limitations => lack of input validation
+
     }
 }
