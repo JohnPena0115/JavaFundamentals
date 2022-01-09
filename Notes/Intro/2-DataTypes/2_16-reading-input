@@ -1,7 +1,7 @@
-In Java, to read input from a user we need to
-import the Scanner class. The Scanner class is
+In Java, to read input from a user we'll need
+the Scanner class. The Scanner class is
 defined in the java.util package so we will need
-to import it.
+to import that package.
 
 If we want to read input from a user from the
 terminal window we would first need to create
@@ -26,7 +26,7 @@ Now, we would be able to use
       System.out.println()
 
 in combination with "number" to return a message back to the user
-based on the number he picked. Below is a simple message we could
+based on the number they picked. Below is a simple message we could
 write:
 
     System.out.println("You picked a number that was one less than " + number+1 + ".");
