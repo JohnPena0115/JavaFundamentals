@@ -1,0 +1,60 @@
+Logical Operators
+-----------------
+
+We use comparison operators to construct stand alone
+(discrete) boolean expressions. We can think of
+discrete boolean expressions as the most basic form
+of a logic test. Logical operators allow us to take
+discrete boolean expressions and combine them in
+order to refine our logic.
+
+Boolean expressions with just comparison operators
+can only test one condition. When we use logical
+operators to combine those types of boolean
+expressions we can test a range of conditions.
+
+In the code down below the boolean expression
+"temperature > 20" can only check if the value
+stored in temperature is above or below 20.
+
+Similarly, the boolean expression "temperature < 30"
+can only check if the value stored in temperature is
+below or above 30.
+
+When we used the "and" logical operator(&&) to combine
+those two boolean expressions we can test if the value
+stored in temperature lies between 21 and 29.
+
+int temperature = 22;
+boolean isWarm = temperature > 20 && temperature < 30;
+System.out.println(isWarm); // true
+
+Other Types of Logical Operators
+--------------------------------
+
+|| .... the "or" logical operator
+
+! .... the "not" logical operator
+
+^ ... the "exclusive or" bitwise logical operator
+
+
+Behavior of Logical Operators
+----------------------------
+
+The "and" logical operator returns true only
+if both of its boolean operands evaluate to true
+
+The "or" logical operator returns true if one or
+both of its boolean operands evaluate to true
+
+The "exclusive or" bitwise logical operator
+returns true if, and only if, one of its boolean
+operands evaluates to true. So, unlike the logical
+"or" operator, if both boolean operands of the
+^ operator evaluate to true, ^ will return false.
+
+The "not" logical operator is a unary operator.
+It's function is not to return a boolean true or
+false but to reverse the boolean value of it's
+boolean operand.
