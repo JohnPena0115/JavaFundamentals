@@ -1,0 +1,13 @@
+In this section we are going to look at
+control flow => controlling the order of
+what gets executed in our program.
+
+We'll address:
+    => Comparison Operators
+    => Logical Operators
+        +How to use them to implement rules/logic
+    => Conditional Statements
+        +How to use them to make decisions in our program
+    => Loops
+        +How to use them to execute code repetitively
+    => Error Handling
