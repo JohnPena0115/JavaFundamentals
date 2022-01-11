@@ -1,0 +1,20 @@
+While loops and For loops have the same purpose
+and similar forms, however, they are ideally
+implemented in different situations.
+
+In general, For loops are best when you know
+the number of repetitions/iterations you want
+to complete ahead of time.
+
+In contrast, while loops are best when you
+don't know the number of repetitions/iterations
+you want to complete before hand.
+
+Below is the general form of a while loop ...
+
+while (boolean condition) {
+
+    //code to be executed
+
+
+}
