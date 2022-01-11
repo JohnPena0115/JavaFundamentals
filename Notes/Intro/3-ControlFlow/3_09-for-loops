@@ -1,0 +1,27 @@
+A For loops has 4 components: a counter variable,
+a boolean condition, a statement that either increments
+or decrements the counter variable and a body.
+
+General Form of a For Loop
+--------------------------
+
+for (counter variable; boolean condition; incrementer/'decrementer') {
+
+            //Code to be executed if boolean condition
+            //evaluates to true
+}
+
+
+The purpose of For loops is to repeat one task many times.
+When you think of "repeat one task many times" you probably
+think of a monotonous process where no change occurs.
+However, with each repetition, the For loop introduces a
+slight change through it's counter variable. A For loop's
+useful lies in this slight change, as it allows you to
+take something monotonous and make it dynamic.
+
+If you could transform an array, a string, a file or even
+an array of objects into a book, a For loop would thumb(iterate)
+through each page and either perform an action or
+look for something that you instructed it to look for and
+then perform an action.
