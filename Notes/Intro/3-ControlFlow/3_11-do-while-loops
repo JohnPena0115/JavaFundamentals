@@ -1,0 +1,79 @@
+Do While Loops
+--------------
+
+A "do ... while" loop is similar to a "while"
+loop but it gets executed at least once because
+the boolean condition is checked at the end
+of the process as opposed to the beginning.
+
+
+
+General form of a "do ... while" loop
+------------------------------------
+
+do {
+
+//Code to be execute at least once
+
+}(boolean condition);
+
+
+
+Food For Thought
+----------------
+When researching the utility of do while loops I
+came across the following thoughts:
+
+1)
+
+Do while has it's uses, but it comes up very rarely
+in practice. Most of the time you don't want to
+execute a loop at all when a condition is false.
+
+2)
+
+Statement:
+---------
+
+Using a “do...while” instead of a traditional “while”
+loop would cut down the number of instructions.
+
+Counter:
+-------
+
+Unless you're severely resource-constrained, this will
+make virtually no difference. And the price you pay is
+clarity.
+
+3)
+
+"do while" is an older concept. In assembly, even though
+there are not key words like "for", "if", or "do while", the
+concept and implementation of a "do while" loop was easier in
+assembly then the concept and implementation of a "while" loop.
+C adapted this practice because, back then, a "do while" loop
+could make a program faster where it mattered.
+
+However, space and time considerations are no longer something
+we have to consider when implementing while loops. We can just
+declare a variable, initialize it to true, set the variable
+as the boolean condition for the while loop and carry on.
+
+ 4)
+
+ Statement:
+ ----------
+
+ Why is a "do ... while" loop not used more often.
+
+ Response:
+ ---------
+
+ Because when I'm looping it is almost always
+ over a collection of things in some way, and in
+ that case, the collection might be empty.
+
+ But I do use do-while now and then when the
+ situation calls for it, e.g., prompting for valid
+ user input.
+
