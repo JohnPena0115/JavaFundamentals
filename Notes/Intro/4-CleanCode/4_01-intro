@@ -1,0 +1,13 @@
+Intro
+-----
+
+Objectives
+----------
+
+=> continue to extend our mortgage calculator
+   and add new features to it
+
+=> Clarity will get lost along the way and
+   our code will become harder to maintain.
+   Refactoring will help us mitigate this.
+
