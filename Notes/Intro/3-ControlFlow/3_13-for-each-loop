@@ -1,0 +1,55 @@
+For Each Loops
+--------------
+
+Like other loops, For Each loops are used to
+traverse:
+    +arrays
+
+    +collections
+        => Set
+        => ArrayList
+        => HashSet
+
+Think of a collection as a group of objects, a group of instances
+of a particular class.
+
+The "For Each" loop and "For" loop start off the same, with the
+keyword "for". However, in a For Each loop, instead of declaring
+and initializing a loop counter variable you declare a variable
+that is the same type of the base type of the array. If the array
+identifier is a plural, the variable you'll declare is usually
+singular. You follow the variable identifier with a colon and
+follow that with the name of the array.
+
+Below is an example implementation:
+
+String[] fruits = {"Apple", "Mango", "Orange"};
+
+for (String fruit : fruits)
+      System.out.println(fruit);
+
+
+In the For Each body, instead of using the common counter
+variables of i, j, or k that you would use in the For loop,
+you would used the "fruit" variable.
+
+Notice, that unlike a "For" loop, there is no boolean
+condition or increment/decrement statement.
+
+Limitations of a For Each loop
+------------------------------
+
+Unlike "For" loops, "For Each" loops do not give you access the
+an array's indexes. So if you need to access the index of an array,
+as oppose to the values of the index, you are better of using a
+"For" loop.
+
+"For Each" loops can only iterate forward and touch all the
+elements of an array/collection. In contrast, "For" loops can traverse
+an array or collection in either direction (forward or backwards)
+and are not constrained to interacting with each index/element of an
+array or collection. With a "For" loop, you can just as easily
+use "i += 2" as you could "i++"
+
+Lastly, "For Each" loops are not as efficient as "For" loops in terms
+of performance.
