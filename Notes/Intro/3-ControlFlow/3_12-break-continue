@@ -1,0 +1,19 @@
+"Break" and "Continue" Key Words
+--------------------------------
+
+Normally, a loop will terminate when
+it's boolean condition evaluates to false.
+
+The break statement allows you terminate a
+loop before the boolean condition in the loop
+evaluates to false.
+
+If a specified condition occurs a break statement
+will terminate the whole loop. In contrast,
+a continue statement terminates one iteration
+of a loop earlier based on some condition.
+
+In switch statements "break" statements are, the
+majority of times, a necessity. In While or For loops,
+the "break" and "continue" key words are an add-on that
+allow you to fine tune your logic/process.
