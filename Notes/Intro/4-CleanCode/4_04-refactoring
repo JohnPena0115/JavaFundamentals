@@ -1,0 +1,43 @@
+Refactoring
+-----------
+
+Refactoring => to change the structure of our code without
+               changing it's behavior.
+
+His main method currently has 44 lines of code. He is going to
+take some of those lines of code and put them in another method.
+
+When refactoring:
+
+    => Look for lines of code that are conceptually related/always go together
+
+        +In his code the, the following variables are
+        conceptually related:
+
+            + monthlyInterest and annualInterest
+            + numberOfPayments and years(number of years)
+
+       He contends that the logic for calculating the mortgage is currently all over
+       the place in his main method and he wants to bring the lines encompassing
+       that logic together in a separate method.
+
+    => Repetitive patterns in your code
+
+        +In his code he considers the while loops repetitive
+
+            + The pattern of his while loops
+                +An infinite loop followed by a
+                +Question followed by a
+                +Value being read followed by
+                +Data Validation followed by an
+                +Error message is the value is invalid
+
+        All the questions asked in his program have this pattern. He wants
+        to extract this pattern into its own method.
+
+
+
+
+
+
+
