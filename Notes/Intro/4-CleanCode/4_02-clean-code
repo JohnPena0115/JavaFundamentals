@@ -1,0 +1,20 @@
+Clean Coding
+------------
+
+Encourages us to think of our code the same
+way we would think about an idealized
+apartment => keep it clean and organized.
+
+Things to Keep in Mind
+----------------------
+
+As our programs grow larger we have to break down
+our code into smaller chunks. These chunks are
+easier to read and understand. Also we can potentially
+reuse them in other programs. In theory, programs written
+this way are more maintainable and easier to extend.
+
+As he puts it, we going to do open surgery on the
+mortgage calculator, restructuring the code step by step.
+
+
