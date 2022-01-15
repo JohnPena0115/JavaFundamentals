@@ -1,0 +1,64 @@
+Creating Methods
+----------------
+
+For small programs writings your lines of code inside
+the main method is acceptable. For larger programs, it
+is advisable to create your own methods and call those
+methods inside the main method. Methods allow us to
+package/wrap related lines of code once so that we
+can reuse them multiple times without having to write
+them out each time.
+
+We can create our own methods in two ways:
+    => Within the scope of the Main class but
+       outside the scope of the main method
+    => In a new Java file within the same package
+
+
+Methods can potentially have up to 7 core elements:
+
+    => An access modifier
+          +When declaring a method ... Not necessary but it is advised
+
+    => Whether the method is static or not
+          +When declaring a method ... Potentially, depending on the method's functionality
+
+    => A return type
+           +When declaring a method ... Necessary
+
+    => An identifier/name
+            +When declaring a method ... Necessary
+
+    => Parentheses
+            + When declaring a method ... Necessary
+
+    => Parameters
+            + When declaring a method ... Potentially, depending on the method's functionality
+            + Located inside a method's parentheses
+
+    => Body
+            + When declaring a method ... Necessary
+            + Delineated by a pair of curly braces
+            + The related lines of code the method will execute would be inside the
+              curly braces
+
+
+
+Refreshers
+----------
+
+Static methods belong to a Java Class as oppose to an
+object. In this way they are analogous to fields. Fields
+are attributes that belong to a class and variables are
+attributes that belong to an object, to the best of my
+understanding so far.
+
+Public methods can be accessed but within and outside the
+Java package they reside in. Since a Java package is itself
+a collection of related classes, public methods can be
+accessed but within and outside of it's own class.
+
+shift+F6 => shortcut to rename an identifier. In IntelliJ,
+if you have multiple instances of an identifier you just
+have to rename one of those instances and IntelliJ renames
+the rest of the instances for you.
