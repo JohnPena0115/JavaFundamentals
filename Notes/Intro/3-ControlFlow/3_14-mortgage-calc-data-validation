@@ -1,0 +1,22 @@
+Extending original Mortgage Calc
+------------------------------------
+
+=> Wants us to implement some basic error handling.
+
+    +For the Principle, he wants us to make sure that the
+     user enters a number within a valid range. He wants
+     this range to be between 1_000 and 1_000_000. If
+     a user's input is not within this range he wants us to
+     re-prompt the user to provide a number within range.
+
+
+     +For the Annual Interest Rate, he wants us to make sure
+      a user enters a number greater than 0 but less than or
+      equal to 30.
+
+      +For Period (Years) he want us to implement logic that will
+       validate that a user has entered a number that is at least
+       1 but no greater than 30.
+
+
+ This version of the program will be in the MortgageCalc2Main class.
