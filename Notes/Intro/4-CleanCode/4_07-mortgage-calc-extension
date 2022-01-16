@@ -1,0 +1,19 @@
+Mosh wants us to extend the mortgage calc program by showing
+all the payments throughout the life time of the loan along
+with the remaining balance after each payment.
+
+Down below is the formula for calculating the remaining balance
+after each payment.
+
+B = L * [(1+c)^n - (1+c)^p ] / (1 + c)^n - 1
+
+
+L => the loan amount/principal
+
+c => the monthly interest
+
+n => number of payments throughout the lifetime of the loan
+
+p => number of payments made so far
+
+B => the remaining balance on the loan
