@@ -1,0 +1,62 @@
+Really like his process for refactoring the repetitive While loops.
+
+Refactoring logic seems straight-forward. Refactoring out repetitiveness
+seems like a more nebulous process.
+
+I've seen this style of refactoring before and it's always seemed
+beyond my reach of truly comprehending. You try and grasp it but
+it evades your reach. Hopefully with more examples I'll become
+more accustomed to this thought process.
+
+Nevertheless, you can see the difference refactoring out the while
+loops has on the readability of the code.
+
+public class MortgageCalc4Main {
+
+    public static void main(String[] args) {
+
+        int principal = (int) readNumber("Principal: ", 1000, 1_000_000);
+        float annualInterest = (float) readNumber("Annual Interest Rate: ", 1, 30);
+        byte years = (byte) readNumber("Period (Years): ", 1, 30);
+
+        double mortgage = calculateMortgage(principal, annualInterest, years);
+
+        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+        System.out.println("Mortgage: " + mortgageFormatted);
+    }
+
+    public static double readNumber(String prompt, double min, double max) {
+
+        Scanner scanner = new Scanner(System.in);
+        double value;
+        while (true) {
+           System.out.print(prompt);
+           value = scanner.nextInt();
+
+           if (value >= min && value <= max)
+              break;
+
+           System.out.println("Enter a value between " + min + " and " + max);
+       }
+
+       return value;
+    }
+
+    public static double calculateMortgage(
+            int principal,
+            float annualInterest,
+            byte years) {
+
+        final byte MONTHS_IN_YEAR = 12;
+        final byte PERCENT = 100;
+
+        float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
+        short numberOfPayments = (short)(years * MONTHS_IN_YEAR);
+        double mortgage = principal
+                * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
+                / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
+
+        return mortgage;
+
+    }
+}
