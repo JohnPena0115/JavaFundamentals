@@ -11,10 +11,10 @@ throughout the video:
 
 public class MortgageCalc5Main {
 
-    public static void main(String[] args) {
+    final static byte MONTHS_IN_YEAR = 12;
+    final static byte PERCENT = 100;
 
-        final static byte MONTHS_IN_YEAR = 12;
-        final static byte PERCENT = 100;
+    public static void main(String[] args) {
 
         int principal = (int) readNumber("Principal: ", 1000, 1_000_000);
         float annualInterest = (float) readNumber("Annual Interest Rate: ", 1, 30);
@@ -32,7 +32,7 @@ public class MortgageCalc5Main {
         System.out.println("-----------------");
         for(short month = 1; month <= years * MONTHS_IN_YEAR; month++) {
 
-            double balance = calculateBalance(principal, annualInterest, years, month)
+            double balance = calculateBalance(principal, annualInterest, years, month);
             System.out.println(NumberFormat.getCurrencyInstance().format(balance));
         }
     }
