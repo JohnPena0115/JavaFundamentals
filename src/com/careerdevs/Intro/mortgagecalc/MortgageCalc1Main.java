@@ -3,7 +3,7 @@ package com.careerdevs.Intro.mortgagecalc;
 import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class MortgageCalcMain {
+public class MortgageCalc1Main {
 
     public static void main(String[] args) {
 
